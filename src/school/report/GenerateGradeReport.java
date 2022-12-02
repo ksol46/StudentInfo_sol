@@ -14,7 +14,7 @@ import utils.Define;
 
 public class GenerateGradeReport {
 	//필드
-	School school = School.getInstance(); //school 싱글톤 객체 생성
+	School school = School.getInstance(); //school 싱글톤 객체 생성 instance가 들어가있음.
 	
 	public static final String TITLE = "수강생 학점 \t\t\n";
 	public static final String HEADER = "이름 | 학번 | 필수과목 | 점수      \n";

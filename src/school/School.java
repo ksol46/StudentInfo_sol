@@ -18,7 +18,7 @@ public class School {
 	
 	//싱글톤은 생성자가 private -> 외부에서 여러개의 객체를 생성하면 안됨.
 	private School() {
-		
+	
 	}
 	
 	//싱글톤 메소드 구현 : school객체를 리턴해준다.

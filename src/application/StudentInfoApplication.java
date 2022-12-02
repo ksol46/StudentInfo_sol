@@ -75,6 +75,7 @@ public class StudentInfoApplication {
 		Student student3 = new Student(171230, "이현욱", korean);
 		Student student4 = new Student(171255, "임지연", korean);
 		Student student5 = new Student(171590, "김재현", math );
+		Student student6 = new Student(171593, "김솔", korean );
 		/*
 		  Student 타입의 student1는 181213, "박지은", korean 값을 넣은 새로운 Student 객체가 생성된다.
 		  새 객체안에 값이 저렇게 들어갈 수 있는 이유는!!
@@ -90,6 +91,7 @@ public class StudentInfoApplication {
 		goodSchool.addStudent(student3);
 		goodSchool.addStudent(student4);
 		goodSchool.addStudent(student5);
+		goodSchool.addStudent(student6);
 		/*
 		  싱글톤으로 만든 instance가 들어있는 goodSchool 안에 새로 만든 객체였던 student1을 넣어,
 		  addStudent 해준다. 이것은 studentList.add(student); 하는 것.
@@ -101,6 +103,7 @@ public class StudentInfoApplication {
 		korean.register(student3);
 		korean.register(student4);
 		korean.register(student5);
+		korean.register(student6);
 		/*
 		국어를 student1을 넣어서
 		studentList.add(student); 해준다.
@@ -112,6 +115,7 @@ public class StudentInfoApplication {
 		math.register(student3);
 		math.register(student4);
 		math.register(student5);
+		math.register(student6);
 		/*
 		 수학을 student1을 넣어서
 		 studentList.add(student); 해준다.
@@ -132,6 +136,9 @@ public class StudentInfoApplication {
 		
 		addScoreForStudent(student5, korean, 85);
 		addScoreForStudent(student5, math, 56);
+		
+		addScoreForStudent(student6, korean, 100);
+		addScoreForStudent(student6, math, 100);
 		
 	}
 	
